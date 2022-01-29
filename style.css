@@ -550,12 +550,13 @@ img.dark-mode {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    background: var(--black-color);
+    background: var(--white-color);
     max-width: 365px;
     border-radius: 15px;
     text-align: center;
     padding: 25px 25px 30px 25px;
     z-index: 1;
+    box-shadow: 0px 0px 3px 0px rgba(78, 78, 78, 0.507);
 }
 
 .wrapper.hide {
@@ -580,12 +581,12 @@ img.dark-mode {
 }
 
 .content p {
-    color: var(--white-color);
+    color: var(--black-color);
     margin-bottom: 15px;
 }
 
 .content header {
-    color: var(--white-color);
+    color: var(--black-color);
     margin: 5px 0 20px 0;
 }
 
@@ -609,6 +610,13 @@ img.dark-mode {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    border: 2px solid var(--first-color);
+}
+
+.buttons button:hover {
+    background: var(--white-color);
+    color: var(--first-color);
+    transition: .3s linear;
 }
 
 .buttons a {
