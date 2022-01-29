@@ -384,6 +384,32 @@ img.dark-mode {
     border-radius: .5rem;
 }
 
+
+/* PROJECTS SECTION STYLING */
+
+.work {
+    text-align: center;
+}
+
+.work__container {
+    row-gap: 2rem;
+}
+
+.work__img {
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.work__img img {
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.work__img img:hover {
+    transform: scale(1.03);
+}
+
 /* FOOTER STYLING */
 
 .footer {
@@ -482,6 +508,12 @@ img.dark-mode {
     }
     .about__img img {
         width: 300px;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
     }
 }
 
