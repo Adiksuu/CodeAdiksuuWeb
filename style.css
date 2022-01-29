@@ -542,3 +542,75 @@ img.dark-mode {
     border-radius: 5px;
     background-color: var(--first-color);
 }
+
+
+/* COOKIE BOX STYLING */
+
+.wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: var(--black-color);
+    max-width: 365px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px 25px 30px 25px;
+    z-index: 1;
+}
+
+.wrapper.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.wrapper img {
+    max-width: 90px;
+    display: unset;
+    border-radius: 50%;
+}
+
+.wrapper .content {
+    margin-top: 10px;
+}
+
+.content header {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content p {
+    color: var(--white-color);
+    margin-bottom: 15px;
+}
+
+.content header {
+    color: var(--white-color);
+    margin: 5px 0 20px 0;
+}
+
+.content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .item {
+    margin: 0 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background: var(--first-color);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: var(--first-color);
+}
