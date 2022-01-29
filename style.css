@@ -12,6 +12,9 @@
     --first-color: #2f81c4;
     --white-color: #fff;
     --black-color: #0f0f0f; 
+
+    /* --white-color: #0f0f0f;
+    --black-color: #fff; */
 }
 
 :root {
@@ -60,6 +63,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--white-color);
+    background: var(--white-color);
 }
 
 h1,h2,p {
@@ -109,6 +113,13 @@ img {
     padding-top: 3rem;
     padding-bottom: 2rem;
     color: var(--black-color);
+}
+
+/* DARK THEME STYLING */
+
+.dark-theme {
+    --white-color: #0f0f0f;
+    --black-color: #fff;
 }
 
 /* HEADER STYLING */
@@ -189,6 +200,12 @@ img {
     cursor: pointer;
 }
 
+img.dark-mode {
+    width: 20px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
 /* MENU STYLING */
 
 .active::after {
@@ -248,7 +265,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    width: 205px;
 }
 
 /* BUTTON STYLING */
@@ -388,12 +405,15 @@ img {
 .footer__icon {
     font-weight: 300;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white-color);
     margin: 0 var(--mb-2);
 }
 
 .footer p {
-    color: #fff;
+    color: var(--white-color);
+}
+.footer p span {
+    color: var(--first-color);
 }
 
 

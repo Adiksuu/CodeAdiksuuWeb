@@ -22,3 +22,16 @@ function linkAction() {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+var icon = document.getElementById("dark-mode");
+
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (!document.body.classList.contains("dark-theme")) {
+        icon.src = "Images/moon.png";
+    } else {
+        icon.src = "Images/sun.png";
+    }
+}
