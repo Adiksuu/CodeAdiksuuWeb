@@ -998,3 +998,38 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
+
+
+/* SCROLL TOP STYLING */
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--first-color);
+  color: var(--white-color);
+  right: 30px;
+  bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 9999;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  border: 2px solid var(--first-color);
+  transition: .4s linear;
+}
+
+.scroll-up-btn:hover {
+  background: var(--white-color);
+  color: var(--first-color);
+  border-radius: var(--first-color);
+  border-radius: 5px;
+}
+
+.scroll-up-btn.show {
+  display: block;
+  bottom: 30px;
+}
+

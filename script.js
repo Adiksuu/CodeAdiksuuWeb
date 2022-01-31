@@ -73,3 +73,24 @@ icon.onclick = function () {
         icon.src = "Images/sun.png";
     }
 }
+
+
+
+const scrollBtn = document.querySelector(".scroll-up-btn");
+
+const refreshButtonVisibility = () => {
+  if (document.documentElement.scrollTop <= 50) {
+    scrollBtn.classList.remove("show")
+  } else {
+    scrollBtn.classList.add("show");
+  }
+};
+
+scrollBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", (e) => {
+  refreshButtonVisibility();
+});
