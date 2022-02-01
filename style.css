@@ -201,10 +201,9 @@ img {
     cursor: pointer;
 }
 
-img.dark-mode {
-    width: 20px;
+.dark-mode {
     cursor: pointer;
-    margin-top: 3px;
+    font-size: 20px;
 }
 
 /* MENU STYLING */
@@ -1002,34 +1001,42 @@ textarea.input {
 
 /* SCROLL TOP STYLING */
 
-.scroll-up-btn {
+.scrollToTop-btn{
+  z-index: 999;
   position: fixed;
-  height: 45px;
-  width: 42px;
   background: var(--first-color);
   color: var(--white-color);
-  right: 30px;
-  bottom: 10px;
-  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  right: 20px;
+  bottom: 0;
+  font-size: 25px;
   text-align: center;
   line-height: 45px;
-  z-index: 9999;
-  font-size: 30px;
+  border-radius: 3px;
   cursor: pointer;
-  display: none;
-  border: 2px solid var(--first-color);
-  transition: .4s linear;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
-.scroll-up-btn:hover {
-  background: var(--white-color);
-  color: var(--first-color);
-  border-radius: var(--first-color);
-  border-radius: 5px;
+.scrollToTop-btn.active{
+  bottom: 20px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.scroll-up-btn.show {
-  display: block;
-  bottom: 30px;
+
+/* REVEAL EFFECT STYLING */
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1.5s ease;
 }
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
