@@ -21,28 +21,54 @@
     </div>
 
 
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">CodeAdiksuu</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a class="nav__link"><i class="fas fa-moon dark-mode" id="dark-mode"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">CodeAdiksuu</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#home">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <i class='bx bx-info-circle'></i>
+                    <span class="links_name">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <i class='bx bx-medal'></i>
+                    <span class="links_name">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="Images/logo.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">CodeAdiksuu</div>
+                        <div class="job">Novice Web designer</div>
+                    </div>
+                </div>
+                <i class='bx bx-moon' id="dark-mode"></i>
+            </li>
+        </ul>
+    </div>
 
 
             <div class="wrapper">
@@ -77,11 +103,11 @@
 
 
         <section class="about section" id="about">
-            <h2 class="section-title reveal">About</h2>
+            <h2 class="section-title">About</h2>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img class="reveal" src="Images/logo.png" alt="CodeAdiksuu">
+                    <img class="" src="Images/logo.png" alt="CodeAdiksuu">
                 </div>
 
                 <div>
@@ -95,7 +121,7 @@
 
 
         <section class="skills section" id="skills">
-            <h2 class="section-title reveal">Skills</h2>
+            <h2 class="section-title ">Skills</h2>
 
             <div class="skills__container bd-grid">
                 <div>
@@ -143,32 +169,31 @@
                     </div>
                 </div>
                 <div>
-                    <img class="skills__img reveal" src="Images/data-science.png">
+                    <img class="skills__img" src="Images/data-science.png">
                 </div>
             </div>
         </section>
 
 
             <section class="work section" id="projects">
-            <h2 class="section-title reveal">My Projects</h2>
+            <h2 class="section-title">My Projects</h2>
 
             <div class="work__container bd-grid">
                 <div class="work__img">
-                    <a href="#"><img class="reveal" src="Images/project1.png" alt=""></a>
+                    <a href="#"><img src="Images/project1.png" alt=""></a>
                 </div>
                 <div class="work__img">
-                   <a href="https://quizme.ml"><img class="reveal" src="Images/project2.png" alt=""></a>
+                   <a href="https://quizme.ml"><img src="Images/project2.png" alt=""></a>
                 </div>
             </div>
             </section>
 
 
         <section class="work contact" id="contact">
-            <h2 class="section-title reveal">Contact With Me</h2> 
+            <h2 class="section-title">Contact With Me</h2> 
             <form action="https://formsubmit.co/kacperbielinski17@gmail.com" method="POST">
             <div class="container">
                 <span class="big-circle"></span>
-                <!-- <img src="img/shape.png" class="square" alt="" /> -->
                 <div class="form">
                     <div class="contact-info">
                         <h3 class="title">About</h3>
@@ -181,7 +206,7 @@
                         <div class="info">
                             <div class="information">
                                 <!-- <img src="img/location.png" class="icon" alt="" /> -->
-                                <h3 class="reveal">MY WEBSITES:</h3>
+                                <h3>MY WEBSITES:</h3>
                             </div>
                             <div class="information">
                                 <!-- <img src="img/email.png" class="icon" alt="" /> -->
@@ -256,6 +281,7 @@
     </footer>
 
     <script src="script.js"></script>
+
 
 </body>
 </html>

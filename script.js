@@ -1,3 +1,26 @@
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+
+
+
+
 const cookieBox = document.querySelector(".wrapper"),
 acceptBtn = cookieBox.querySelector(".buttons button");
 
@@ -35,33 +58,6 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
-
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-
-    if(toggle && nav) {
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-
-showMenu('nav-toggle', 'nav-menu')
-
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction() {
-    navLink.forEach(n => n.classList.remove('active'))
-    this.classList.add('active')
-
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
-}
-
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
 var icon = document.getElementById("dark-mode");
 
 icon.onclick = function () {
@@ -88,18 +84,3 @@ scrollBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
-window.addEventListener("scroll", reveal);
-
-function reveal(){
-  var reveals = document.querySelectorAll(".reveal");
-
-  for(var i = 0; i < reveals.length; i++){
-    var windowHeight = window.innerHeight;
-    var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 50;
-
-    if(revealTop < windowHeight - revealPoint){
-      reveals[i].classList.add("active");
-    }
-  }
-}
