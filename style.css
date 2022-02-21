@@ -351,7 +351,37 @@ img {
 }
 
 .work__img img:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
+}
+
+.info__projects {
+  background: var(--black-color);
+  height: 120px;
+}
+
+.info__projects p {
+  color: var(--white-color);
+  padding-top: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.button.github {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 29px;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
 }
 
 /* FOOTER STYLING */
@@ -1159,11 +1189,11 @@ textarea.input {
 
 @media (max-width: 1280px) {
 
-.home, .about, .skills, .projects, .contact{
+.home, .about, .skills, .work, .contact{
   display: inline-block;
   color: #11101d;
   font-size: 11px;
   font-weight: 400;
-  padding-left: 68px;
+  padding-left: 78px;
 }
 }
