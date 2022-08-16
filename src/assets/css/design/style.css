@@ -100,10 +100,35 @@ button#more:hover {
     background: var(--blue-500);
 }
 
+
+.lang {
+	z-index: 1;
+	pointer-events: none;
+}
+.lang.show {
+	opacity: 1;
+	pointer-events: all;
+}
+.lang div i {
+	line-height: 128px;
+}
+.lang div:hover {
+	background: var(--black-900);
+}
+.lang div.active, .lang div:hover {
+	border-color: var(--blue-500);
+}
+
 @media screen and (max-width: 768px) {
     .home h1 {
         font-size: 38px;
     }
+	.lang {
+		width: calc(100% - 25px);
+	}
+	.lang div p, .lang div i {
+		color: var(--white-900);
+	}
 }
 
 /* PRICING SECTION STYLING */
@@ -242,7 +267,7 @@ svg {
 	position: relative;
 	transform: translateY(50px);
 	opacity: 0;
-	transition: all 1.5s ease;
+	transition: all .4s ease;
 }
 
 .reveal.active {

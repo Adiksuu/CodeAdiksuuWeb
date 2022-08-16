@@ -25,6 +25,7 @@ const change = () => {
 change();
 setInterval(change, 6000);
 
+
 const sectionAll = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", () => {
 	const scrollY = window.pageYOffset;
@@ -46,3 +47,9 @@ const hamburgerMenu = document.querySelector(".hamburger");
 hamburgerMenu.addEventListener("click", function () {
 	hamburgerMenu.classList.toggle("active");
 });
+
+function toggleTrans() {
+	const translator = document.getElementById("translator");
+
+	translator.classList.toggle("show");
+}
