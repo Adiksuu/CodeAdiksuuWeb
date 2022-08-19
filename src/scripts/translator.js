@@ -1,10 +1,12 @@
 const english = document.getElementById("english");
 const polish = document.getElementById("polish");
 const homeNav = document.getElementById("homeNav");
+const usedNav = document.getElementById("usedNav");
 const skillsNav = document.getElementById("skillsNav");
 const pricingNav = document.getElementById("pricingNav");
 const projectsNav = document.getElementById("projectsNav");
 const homeNavShort = document.getElementById("homeNavShort");
+const usedNavShort = document.getElementById("usedNavShort");
 const skillsNavShort = document.getElementById("skillsNavShort");
 const pricingNavShort = document.getElementById("pricingNavShort");
 const projectsNavShort = document.getElementById("projectsNavShort");
@@ -19,6 +21,8 @@ const AdvancedWebsiteCost = document.getElementById("AdvancedWebsiteCost");
 const ProWebsiteCost = document.getElementById("ProWebsiteCost");
 const footerText = document.getElementById("footerName");
 const homeTitles = document.getElementById("homeTitles");
+const usedTitle = document.getElementById("usedTitle");
+const sliderTitle = document.getElementById("sliderTitle");
 
 let translated = 0;
 
@@ -26,22 +30,26 @@ let translated = 0;
 function englishTranslate() {
     homeNav.innerHTML = "Home";
 	skillsNav.innerHTML = "Skills";
+	usedNav.innerHTML = "Used";
 	pricingNav.innerHTML = "Pricing";
 	projectsNav.innerHTML = "Projects";
 	homeNavShort.innerHTML = "Home";
+	usedNavShort.innerHTML = "Used";
 	skillsNavShort.innerHTML = "Skills";
 	pricingNavShort.innerHTML = "Pricing";
 	projectsNavShort.innerHTML = "Projects";
     basicText.innerHTML = 'Basic Website <span class="opacity-0"><i class="fas fa-angle-double-right"></i></span>'
     advancedText.innerHTML = 'Advanced Website <span class="opacity-0"><i class="fas fa-angle-double-right"></i></span>'
-    proText.innerHTML = 'Pro Website <span class="opacity-0"><i class="fas fa-angle-double-right"></i></span>'
+    proText.innerHTML = 'Professional Website <span class="opacity-0"><i class="fas fa-angle-double-right"></i></span>'
     englishTr.innerHTML = "ENGLISH";
     polishTr.innerHTML = "POLISH";
 	infoButton.innerText = "MORE INFO";
 	BasicWebsiteCost.innerHTML = '2 <i class="fas fa-dollar"></i>';
 	AdvancedWebsiteCost.innerHTML = '5 <i class="fas fa-dollar"></i>';
 	ProWebsiteCost.innerHTML = '10 <i class="fas fa-dollar"></i>';
-    footerText.innerHTML = '&#169; 2022 copyright <span class="fc-blue-900">CodeAdiksuu</span>.';
+	footerText.innerHTML = '&#169; 2022 copyright <span class="fc-blue-900">CodeAdiksuu</span>.';
+	usedTitle.innerHTML = "I'm Currently Using This"
+	sliderTitle.innerHTML = "My 3 Latest Projects";
     homeTitles.innerHTML = 'Welcome On <span class="gradient">My</span> <br />Personal <span class="gradient" id="changedText">PortfoLio</span> Website'
 
     translated = 0;
@@ -64,8 +72,10 @@ function polishTranslate() {
 	homeNav.innerHTML = "Główna";
 	skillsNav.innerHTML = "Umiejętności";
 	pricingNav.innerHTML = "Płatności";
+	usedNav.innerHTML = "Narzędzia";
 	projectsNav.innerHTML = "Projekty";
 	homeNavShort.innerHTML = "Główna";
+	usedNavShort.innerHTML = "Narzędzia";
 	skillsNavShort.innerHTML = "Umiejętności";
 	pricingNavShort.innerHTML = "Płatności";
 	projectsNavShort.innerHTML = "Projekty";
@@ -79,7 +89,8 @@ function polishTranslate() {
 	AdvancedWebsiteCost.innerHTML = "25 PLN";
 	ProWebsiteCost.innerHTML = "50 PLN";
 	footerText.innerHTML = '&#169; 2022 prawa autorskie <span class="fc-blue-900">CodeAdiksuu</span>.';
-    
+	usedTitle.innerHTML = "Aktualnie Wykorzystuje To";
+	sliderTitle.innerHTML = "Moje 3 Ostatnie Projekty";
     homeTitles.innerHTML = 'Witaj Na <span class="gradient">Mojej</span> <br />Personalnej stronie <span class="gradient" id="changedTextPOL">PortfoLio</span>'
 
     translated = 1;

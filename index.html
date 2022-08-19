@@ -31,8 +31,6 @@
 
 			gtag("config", "G-TK7775X3GQ");
 		</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5343016019158320"
-     crossorigin="anonymous"></script>
 	</head>
 	<body class="bc-black-700" onload="start();">
 		<!-- NAVBAR -->
@@ -64,6 +62,14 @@
 						href="#skills"
 						id="skillsNav"
 						>Skills</a
+					>
+				</li>
+				<li class="">
+					<a
+						class="fc-white-900 fs-16 br-all-4 tt-uppercase fw-600"
+						href="#used"
+						id="usedNav"
+						>Used</a
 					>
 				</li>
 				<li class="">
@@ -103,16 +109,11 @@
 				<p
 					class="d-flex justify-content align-items text-align cursor-pointer p-absolute fc-gray-700 fs-14 top-10-10"
 				>
-					<a href="#" class="fc-gray-800" id="homeNavShort">Home</a>・<a
-						href="#skills"
-						class="fc-gray-800"
-						id="skillsNavShort"
-						>Skills</a
-					>・<a href="#pricing" class="fc-gray-800" id="pricingNavShort"
-						>Pricing</a
-					>・<a href="#projects" class="fc-gray-800" id="projectsNavShort"
-						>Projects</a
-					>
+					<a href="#" class="fc-gray-800" id="homeNavShort">Home</a>・
+					<a href="#skills" class="fc-gray-800" id="skillsNavShort">Skills</a>・
+					<a href="#used" class="fc-gray-800" id="usedNavShort">Used</a>・
+					<a href="#pricing" class="fc-gray-800" id="pricingNavShort">Pricing</a>・
+					<a href="#projects" class="fc-gray-800" id="projectsNavShort">Projects</a>
 				</p>
 				<div class="p-absolute top-256 gap-24 d-flex">
 					<a href="https://github.com/Adiksuu"><button
@@ -197,7 +198,7 @@
 
 		<section class="skills h-auto bc-black-600" id="skills">
 			<div
-				class="skills-box d-flex flex-col m-auto justify-content align-items text-align w-5-10 h-256 bc-black-500 p-relative mb-64 br-all-12"
+				class="skills-box d-flex flex-col m-auto justify-content align-items text-align w-5-10 h-auto bc-black-500 p-relative mb-64 br-all-12"
 			>
 				<p class="fc-white-900 p-relative left-0 d-flex w-9-10 top-36 reveal">
 					HTML
@@ -244,6 +245,31 @@
 						class="p-absolute gradient-bc w-5-10 h-10-10 br-all-10 drop"
 					></div>
 				</div>
+				<p class="fc-white-900 p-relative left-0 d-flex w-9-10 top-36 reveal">
+					Python
+				</p>
+				<p
+					class="value fc-blue-500 p-relative right-0 d-flex top-12 w-9-10 drop"
+				>
+					60%
+				</p>
+				<div
+					class="skeleton bc-gray-600 w-9-10 h-6 d-flex flex-col my-12 p-relative br-all-10"
+				>
+					<div
+						class="p-absolute gradient-bc w-6-10 h-10-10 br-all-10 drop"
+					></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="used h-128 my-64" id="used">
+			<h1 id="usedTitle" class="drop fs-28 fc-blue-500 d-flex m-auto justify-content align-items text-align">I'm Currently Using This</h1>
+			<div class="h-10-10 bc-transparent w-10-10 gap-32 d-flex m-auto justify-content align-items text-align reveal">
+				<p id="html" class="fs-64"><a href="https://pl.wikipedia.org/wiki/HTML" class="fc-black-500"><i class="fab fa-html5 cursor-pointer"></i></a></p>
+				<p id="css" class="fs-64"><a href="https://pl.wikipedia.org/wiki/CSS" class="fc-black-500"><i class="fab fa-css3-alt cursor-pointer"></i></a></p>
+				<p id="js" class="fs-64"><a href="https://pl.wikipedia.org/wiki/JavaScript" class="fc-black-500"><i class="fab fa-js-square cursor-pointer"></i></a></p>
+				<p id="python" class="fs-64"><a href="https://pl.wikipedia.org/wiki/Python" class="fc-black-500"><i class="fab fa-python cursor-pointer"></i></a></p>
 			</div>
 		</section>
 
@@ -326,6 +352,21 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="latest h-auto bc-black-700 my-32" id="latest">
+			<h1 id="sliderTitle" class="drop fs-28 fc-blue-500 d-flex m-auto justify-content align-items text-align mb-32">My 3 Latest Projects</h1>
+			<div class="latest-box d-flex m-auto justify-content align-items text-align w-10-10 h-auto p-relative">
+				<div class="latest-content w-512 h-256 bc-transparent br-all-24 bs-solid bt-gray-400 bw-2 p-relative">
+					<img id="slider" src="/src/assets/images/codeadiksuuweb.png" alt="" class="w-10-10 h-10-10 br-all-24 cursor-pointer">
+				</div>
+				<h1 id="sliderText" class="p-absolute d-flex m-auto justify-content text-align fs-28 opacity-0"><i class="fas fa-link fs-24 mr-4"></i>codeadiksuuweb.ml</h1>
+				<div class="p-absolute w-auto h-auto bottom-0">
+					<button id="dot1" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0 active-dot"></button>
+					<button id="dot2" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0"></button>
+					<button id="dot3" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0"></button>
+				</div>
+			</div>
+		</div>
 
 		<section class="projects h-auto bc-black-700" id="projects">
 			<div
@@ -418,5 +459,6 @@
 		<script src="/src/scripts/effects.js"></script>
 		<script src="/src/scripts/links.js"></script>
 		<script src="/src/scripts/translator.js"></script>
+		<script src="/src/scripts/slider.js"></script>
 	</body>
 </html>

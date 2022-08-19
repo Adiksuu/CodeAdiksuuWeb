@@ -112,6 +112,9 @@ button#more:hover {
 .lang div i {
 	line-height: 128px;
 }
+.lang div p, .lang div i {
+	color: var(--white-900);
+}
 .lang div:hover {
 	background: var(--black-900);
 }
@@ -126,8 +129,8 @@ button#more:hover {
 	.lang {
 		width: calc(100% - 25px);
 	}
-	.lang div p, .lang div i {
-		color: var(--white-900);
+	.home div p {
+		font-size: .8rem;
 	}
 }
 
@@ -207,6 +210,7 @@ svg {
 	transform: scale(1.1);
 }
 
+
 @media screen and (max-width: 768px) {
 	.projects-box div {
 		flex: 0 0 90%;
@@ -273,4 +277,59 @@ svg {
 .reveal.active {
 	transform: translateY(0);
 	opacity: 1;
+}
+
+/* USED SECTION STYLING */
+.used div p#html i:hover {
+	color: var(--orange-400);
+}
+.used div p#css i:hover {
+	color: var(--blue-400);
+}
+.used div p#js i:hover {
+	color: var(--yellow-400);
+}
+.used div p#python i:hover {
+	color: var(--blue-200);
+}
+
+@media screen and (max-width: 768px) {
+	.used div p a {
+		color: var(--black-000);
+	}
+}
+
+/* LATEST SECTION STYLING */
+.latest {
+	font-family: 'Poppins', sans-serif;
+}
+.latest-content {
+	overflow: hidden;
+}
+.latest-content img {
+	filter: blur(0);
+	object-fit: cover;
+}
+.latest-content img:hover {
+	filter: blur(2px);
+	transform: scale(1.05);
+}
+.latest-content + h1 {
+	pointer-events: none;
+}
+.latest-content:hover + h1 {
+	opacity: 1;
+}
+.active-dot {
+	background: var(--blue-500);
+}
+
+@media screen and (max-width: 768px) {
+	.latest-content {
+		width: calc(100% - 25px);
+	}
+	#dot1,#dot2,#dot3 {
+		height: 28px;
+		width: 28px;
+	}
 }

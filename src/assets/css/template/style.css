@@ -2540,7 +2540,7 @@ a {
     border-width: var(--px-0);
 }
 .bw-1 {
-    border-width: var(--px-1);
+    border-width: var(--px-px);
 }
 .bw-2 {
     border-width: var(--px-2);
