@@ -154,11 +154,27 @@ div#box {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.box p#graphics {
+	background: -webkit-linear-gradient(var(--green-900), var(--green-000));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .box h2:hover span {
 	transform: translateX(10px);
 	opacity: 1;
 }
+.pricing div {
+	flex-wrap: wrap;
+}
+.pricing div div {
+	flex: 1 0 30%;
+}
 
+@media screen and (max-width: 1124px) {
+	.pricing div div {
+		flex: 1 0 33%;
+	}
+}
 @media screen and (max-width: 768px) {
 	.boxes {
 		width: calc(100% - 30px);
@@ -167,6 +183,9 @@ div#box {
 	.box {
 		width: 100%;
 		background: var(--black-300);
+	}
+	.pricing div div {
+		flex: 1 0 100%;
 	}
 }
 
@@ -332,4 +351,23 @@ svg {
 		height: 28px;
 		width: 28px;
 	}
+}
+
+
+/* BLOG SECTION STYLING */
+.blog-box {
+	height: 212px;
+}
+.blog-left {
+	width: 212px;
+}
+
+div.box {
+	border: 2px solid transparent;
+}
+div.box:hover {
+	border: 2px solid var(--blue-500);
+}
+div.graphics-box:hover {
+	border: 2px solid var(--green-500);
 }
