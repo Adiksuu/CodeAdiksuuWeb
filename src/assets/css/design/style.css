@@ -371,3 +371,36 @@ div.box:hover {
 div.graphics-box:hover {
 	border: 2px solid var(--green-500);
 }
+
+/* OFFERS SECTION STYLING */
+.offers div{
+	flex-wrap: wrap;
+}
+.offers div div {
+	flex: 1 0 25%;
+	border-radius: 4px 4px 0 0;
+}
+.offers div div div {
+	border-radius: 100%;
+	height: 72px;
+	width: 72px;
+	transform: translateY(-50%);
+}
+.offers__icon {
+	outline: 10px solid transparent;
+	transition: .2s linear;
+}
+.offers__icon:hover {
+	outline: 10px solid var(--black-500);
+}
+@media screen and (max-width: 1124px) {
+	.offers div div {
+		flex: 1 0 33%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.offers div div {
+		flex: 1 0 100%;
+	}
+}
