@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio Adiksuu - Home</title>
+		<title>Portfolio Adiksuu - My Projects</title>
 		<link rel="stylesheet" href="/src/assets/css/template/style.css" />
 		<link rel="stylesheet" href="/src/assets/css/design/style.css" />
 		<link
@@ -50,7 +50,7 @@
 			<ul class="mr-20">
 				<li class="">
 					<a
-						class="active fc-white-900 fs-16 br-all-4 tt-uppercase fw-600"
+						class="fc-white-900 fs-16 br-all-4 tt-uppercase fw-600"
 						href="../index.html"
 						id="homeNav"
 						>Home</a
@@ -74,7 +74,7 @@
 				</li>
 				<li class="">
 					<a
-						class="fc-white-900 fs-16 br-all-4 tt-uppercase fw-600"
+						class="active fc-white-900 fs-16 br-all-4 tt-uppercase fw-600"
 						href="../projects/"
 						id="projectsNav"
 						>Projects</a
@@ -154,20 +154,93 @@
 		<section class="short-about h-auto p-relative mt-64" id="short-about">
 			<h2 id="short-aboutTitle" class="drop fs-28 fc-blue-500 d-flex m-auto justify-content align-items text-align">About This</h1>
 			<div class="d-flex m-auto justify-content align-items text-align w-9-10">
-				<p class="fs-18 fw-600 fc-white-500"> This is my official website where you can find a lot of information about me, you can see my designs or buy your own website or avatar / thumbnail graphics</p>
+				<p class="fs-18 fw-600 fc-white-500"> Browse through my last 3 projects or see what website designs I have already created, if you want, click on a given project and it will redirect you to its website, which you can browse freely!</p>
 			</div>
 		</section>
 
-		<section class="used h-128 my-64 p-relative" id="used">
-			<h2 id="usedTitle" class="drop fs-28 fc-blue-500 d-flex m-auto justify-content align-items text-align">I'm Currently Using This</h1>
-			<div class="h-10-10 bc-transparent w-10-10 gap-32 d-flex m-auto justify-content align-items text-align reveal">
-				<p id="html" class="fs-64"><a href="https://pl.wikipedia.org/wiki/HTML" class="fc-black-500"><i class="fab fa-html5 cursor-pointer"></i></a></p>
-				<p id="css" class="fs-64"><a href="https://pl.wikipedia.org/wiki/CSS" class="fc-black-500"><i class="fab fa-css3-alt cursor-pointer"></i></a></p>
-				<p id="js" class="fs-64"><a href="https://pl.wikipedia.org/wiki/JavaScript" class="fc-black-500"><i class="fab fa-js-square cursor-pointer"></i></a></p>
-				<p id="python" class="fs-64"><a href="https://pl.wikipedia.org/wiki/Python" class="fc-black-500"><i class="fab fa-python cursor-pointer"></i></a></p>
+		<div class="latest h-auto bc-black-700 my-32" id="latest">
+			<h1 id="sliderTitle" class="drop fs-28 fc-blue-500 d-flex m-auto justify-content align-items text-align mb-32">My 3 Latest Projects</h1>
+			<div class="latest-box d-flex m-auto justify-content align-items text-align w-10-10 h-auto p-relative">
+				<div class="latest-content w-512 h-256 bc-transparent br-all-24 bs-solid bt-gray-400 bw-2 p-relative">
+					<img id="slider" src="/src/assets/images/codeadiksuuweb.png" alt="" class="w-10-10 h-10-10 br-all-24 cursor-pointer">
+				</div>
+				<h1 id="sliderText" class="p-absolute d-flex m-auto justify-content text-align fs-28 opacity-0"><i class="fas fa-link fs-24 mr-4"></i>codeadiksuuweb.ml</h1>
+				<div class="p-absolute w-auto h-auto bottom-0">
+					<button id="dot1" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0 active-dot"></button>
+					<button id="dot2" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0"></button>
+					<button id="dot3" class="h-16 w-16 bs-none br-all-full cursor-pointer p-relative bottom-0"></button>
+				</div>
+			</div>
+		</div>
+
+		<section class="projects h-auto bc-black-700" id="projects">
+			<div
+				class="projects-box d-flex justify-content align-items text-align m-auto w-10-10 h-auto p-relative gap-16 mt-64"
+			>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project1();"
+				>
+					<img src="/src/assets/images/codeadiksuuweb.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project2();"
+				>
+					<img src="/src/assets/images/fgsweb.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project3();"
+				>
+					<img src="/src/assets/images/findup.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project4();"
+				>
+					<img src="/src/assets/images/greategames.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project5();"
+				>
+					<img src="/src/assets/images/inficloud.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project6();"
+				>
+					<img src="/src/assets/images/oscprojects.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project7();"
+				>
+					<img src="/src/assets/images/pikczuweb.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project8();"
+				>
+					<img src="/src/assets/images/quizme.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project9();"
+				>
+					<img src="/src/assets/images/sawixweb.png" alt="" />
+				</div>
+				<div
+					class="w-512 br-all-10 bc-black-500 cursor-pointer reveal"
+					onclick="project10();"
+				>
+					<img src="/src/assets/images/seaclipstudio.png" alt="" />
+				</div>
 			</div>
 		</section>
-	
+
+		
 
 		<footer class="footer bc-black-700 fc-white-000 text-align fw-600">
 			<p class="footer__title fs-32 mb-32">Adiksuu</p>
@@ -192,5 +265,6 @@
 		<script src="/src/scripts/script.js"></script>
 		<script src="/src/scripts/effects.js"></script>
 		<script src="/src/scripts/links.js"></script>
+		<script src="/src/scripts/slider.js"></script>
 	</body>
 </html>
