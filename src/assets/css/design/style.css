@@ -404,3 +404,18 @@ div.graphics-box:hover {
 		flex: 1 0 100%;
 	}
 }
+
+.stt {
+	z-index: 1;
+	transition: .5s linear;
+}
+
+.stt p i {
+	line-height: 48px;
+}
+.stt.active {
+	opacity: 1;
+}
+.stt:hover {
+	border-radius: 100%;
+}
