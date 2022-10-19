@@ -312,12 +312,6 @@ svg {
 	color: var(--blue-200);
 }
 
-@media screen and (max-width: 768px) {
-	.used div p a {
-		color: var(--black-000);
-	}
-}
-
 /* LATEST SECTION STYLING */
 .latest {
 	font-family: 'Poppins', sans-serif;
@@ -418,4 +412,8 @@ div.graphics-box:hover {
 }
 .stt:hover {
 	border-radius: 100%;
+}
+.home div div a button:hover {
+	background: var(--blue-500);
+	transform: translateY(10px);
 }
