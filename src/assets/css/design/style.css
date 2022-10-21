@@ -417,3 +417,16 @@ div.graphics-box:hover {
 	background: var(--blue-500);
 	transform: translateY(10px);
 }
+
+.terms {
+	margin-left: 25px;
+}
+.terms h1, .terms h2 {
+	color: var(--white-000);
+}
+.terms p, .terms li {
+	color: var(--gray-500);
+}
+.terms li {
+	text-decoration: underline;
+}
