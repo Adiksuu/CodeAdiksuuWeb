@@ -581,6 +581,7 @@ nav button {
   }
   nav div li a {
     padding: 3px 6px;
+    font-size: 10px;
   }
   nav div:nth-child(2) {
     padding-right: 8px;
@@ -593,6 +594,7 @@ nav button {
   }
   section.home .stats {
     width: calc(100% - 32px);
+    top: 96px;
   }
   section.home .stats div {
     flex: 1 0 30%;
