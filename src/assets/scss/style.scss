@@ -579,24 +579,26 @@ nav {
 }
 @media screen and (max-width: 768px) {
     nav {
-        gap: 8px;
+        gap: 4px;
         justify-content: center;
     }
     nav img {
         display: none;
     }
     nav div{
-        gap: 8px;
+        gap: 4px;
     }
     nav div li a {
-        padding: 3px 6px;
+        padding: 3px 3px;
         font-size: 10px;
     }
     nav div:nth-child(2) {
-        padding-right: 8px;
+        padding-right: 4px;
     }
     nav button {
-        display: none;
+        height: 24px;
+        width: 24px;
+        font-size: 12px;
     }
     section.home {
         .heading {
@@ -606,7 +608,7 @@ nav {
         }
         .stats {
             width: calc(100% - 32px);
-            top: 96px;
+            top: 90px;
             div {
                 flex: 1 0 30%;
             }
@@ -641,14 +643,17 @@ nav {
     section.projects {
         .list {
             .project {
-                width: 400px;
+                width: calc(100% - 32px);
                 .top {
                     .img {
                         img {
-                            width: calc(400px - 32px);
+                            width: 100%;
                         }
                     }
                     .info {
+                        div {
+                            flex-wrap: wrap;
+                        }
                         p {
                             font-size: 12px;
                         }

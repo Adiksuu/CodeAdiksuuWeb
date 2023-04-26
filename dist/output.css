@@ -570,24 +570,26 @@ nav button {
 }
 @media screen and (max-width: 768px) {
   nav {
-    gap: 8px;
+    gap: 4px;
     justify-content: center;
   }
   nav img {
     display: none;
   }
   nav div {
-    gap: 8px;
+    gap: 4px;
   }
   nav div li a {
-    padding: 3px 6px;
+    padding: 3px 3px;
     font-size: 10px;
   }
   nav div:nth-child(2) {
-    padding-right: 8px;
+    padding-right: 4px;
   }
   nav button {
-    display: none;
+    height: 24px;
+    width: 24px;
+    font-size: 12px;
   }
   section.home .heading p {
     width: calc(100% - 32px);
@@ -625,7 +627,10 @@ nav button {
     width: calc(100% - 32px);
   }
   section.projects .list .project .top .img img {
-    width: calc(100% - 32px);
+    width: 100%;
+  }
+  section.projects .list .project .top .info div {
+    flex-wrap: wrap;
   }
   section.projects .list .project .top .info p {
     font-size: 12px;
