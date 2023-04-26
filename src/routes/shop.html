@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <nav>
+        <img src="./src/assets/images/icon.png" alt="">
+        <div>
+            <li><a href="#" onclick="toSite('')">Home</a></li>
+            <li><a href="#" onclick="toSite('')">About</a></li>
+        </div>
+        <div>
+            <li><a href="#" onclick="toSite('projects')">Projects</a></li>
+            <li><a href="#" onclick="toSite('shop')" class="active">Shop</a></li>
+            <li><a href="#" onclick="toSite('contact')">Contact</a></li>
+        </div>
+        <button id="toggle"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <section class="shop">
+        <div class="heading">
+            <h3>Shop With Websites</h3>
+        </div>
+        <div class="items">
+            <div class="item">
+                <h2>Bronze</h2>
+                <p>Simple landing page website without any special things</p>
+                <span>5$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=7Z36Q5HGRA2SS')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <h2>Silver</h2>
+                <p>Slightly more advanced site with interesting variations such as darkmode or captivating animations</p>
+                <span>15$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=ER7R3L2KTNQ86')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <h2>Gold</h2>
+                <p>An advanced website with a lot of interesting functionalities, the whole thing is filled with a modernist look</p>
+                <span>25$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=P4HE73TP8AHQN')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <h2>Diamond</h2>
+                <p>A very advanced website with specific database elements, a website processed in current design trends</p>
+                <span>40$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=3DTPPVH8HS7BS')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <h2>Ruby</h2>
+                <p>A professional website with a huge amount of interactive back-end elements (login/registration) using a database</p>
+                <span>55$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=96NFBS9YH39FE')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <h2>Emerald</h2>
+                <p>Extremely refined website with possible API, everything refined to the last detail</p>
+                <span>75$</span>
+                <button onclick="openLink('paypal.com/donate/?hosted_button_id=Q9MV7MRQDU37Q')">Buy now <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../../dist/app.js"></script>
+
+</body>
+</html>

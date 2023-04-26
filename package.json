@@ -1,0 +1,13 @@
+{
+  "name": "fluent-template",
+  "version": "1.0.0",
+  "description": "A fluent template is a simple tool that allows you to make your websites faster!",
+  "main": "./dist/app.js",
+  "scripts": {
+    "dev": "tsc -watch",
+    "sass": "sass --watch ./src/assets/scss/style.scss ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "Adiksuu",
+  "license": "ISC"
+}
