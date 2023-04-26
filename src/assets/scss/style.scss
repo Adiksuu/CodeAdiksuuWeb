@@ -590,6 +590,7 @@ nav {
     }
     nav div li a {
         padding: 3px 6px;
+        font-size: 10px;
     }
     nav div:nth-child(2) {
         padding-right: 8px;
@@ -605,6 +606,7 @@ nav {
         }
         .stats {
             width: calc(100% - 32px);
+            top: 96px;
             div {
                 flex: 1 0 30%;
             }
