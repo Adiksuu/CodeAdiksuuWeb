@@ -2,13 +2,12 @@
 
 
 // Get route name from window location
-let route: any = window.location.search.substring(1)
-route = route.replaceAll('?', ' ').split(' ')
+const route: string = window.location.search.substring(1)
 
 // Check if route name is correctly
-if (route[0] != "") {
+if (route != "") {
   // Fetch route file
-  fetch(`./src/routes/${route[0]}.html`)
+  fetch(`./src/routes/${route}.html`)
     .then(function (response) {
       // Check if route file is valid, if not, change html file to default
       if (!response.ok) {
@@ -20,6 +19,6 @@ if (route[0] != "") {
     .then(function (html) {
       // Change a html file content to grabbed text
       document.body.innerHTML = html;
-      document.title += ` - ${route[0]}`
+      document.title = `${document.title} - ${route}`
     });
 }
