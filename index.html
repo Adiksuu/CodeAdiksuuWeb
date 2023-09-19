@@ -2,105 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeAdiksuu Website</title>
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>CodeAdiksuuWeb Portfolio</title>
+    <link rel="stylesheet" href="./dist/style.css">
     <link rel="shortcut icon" href="./src/assets/images/icon.png" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK7775X3GQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-TK7775X3GQ');
-    </script>
-</head>
-<body class="">
-
-    <nav>
-        <img src="./src/assets/images/icon.png" alt="">
-        <div>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#about" class="active">About</a></li>
-        </div>
-        <div>
-            <li><a href="#" onclick="toSite('projects')">Projects</a></li>
-            <li><a href="#" onclick="toSite('shop')">Shop</a></li>
-            <li><a href="#" onclick="toSite('contact')">Contact</a></li>
-        </div>
-        <button id="toggle"><i class="fas fa-moon"></i></button>
-    </nav>
-    <section class="home" id="home">
-        <div class="heading">
-            <h3>Hi! I'm Adiksuu</h3>
-            <h2>I'm a web developer</h2>
-            <p>I'm CodeAdiksuu, and that's not how I'm recognized online, in the real world my name is Kacper, and I'm from Poland. I create websites using HTML, CSS and JavaScript.</p>
-        </div>
-        <div class="stats">
-            <div>
-                <p id="total_projects"><i class="fa-solid fa-file-alt"></i> 110+</p>
-                <span>Projects</span>
-            </div>
-            <div>
-                <p id="total_time"><i class="fa-solid fa-clock"></i> 500h+</p>
-                <span>Time Spend</span>
-            </div>
-            <div>
-                <p id="total_published"><i class="fa-solid fa-share"></i> 30+</p>
-                <span>Published Websites</span>
-            </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="heading">
-            <h3>About Me</h3>
-        </div>
-        <div class="informations">
-            <div>
-                <div class="top">
-                    <a><i class="fa-solid fa-lightbulb"></i></a>
-                </div>
-                <div class="info">
-                    <p>Ideas</p>
-                    <span>I often come up with interesting ideas worth implementing</span>
-                </div>
-            </div>
-            <div>
-                <div class="top">
-                    <a><i class="fa-solid fa-tools"></i></a>
-                </div>
-                <div class="info">
-                    <p>Creativity</p>
-                    <span>I can implement an idea that I came up with in a short time, I can arrange it so that it looks like it was made by a professional</span>
-                </div>
-            </div>
-            <div>
-                <div class="top">
-                    <a><i class="fa-solid fa-user-clock"></i></a>
-                </div>
-                <div class="info">
-                    <p>Always On Time</p>
-                    <span>I always try to be on time, do not postpone deadlines</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="socials">
-        <div class="heading">
-            <h3>My Socials</h3>
-        </div>
-        <div class="list">
-            <a href="" onclick="openLink('youtube.com/@CodeAdiksuu')"><i class="fab fa-youtube"></i></a>
-            <a href="" onclick="openLink('patreon.com/adiksuu')"><i class="fab fa-patreon"></i></a>
-            <a href="" onclick="openLink('github.com/Adiksuu')"><i class="fab fa-github"></i></a>
-            <a href="" onclick="openLink('behance.net/codeadiksuu')"><i class="fab fa-behance"></i></a>
-        </div>
-    </section>
-
-    <script src="./dist/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-left">
+                <h1>Portfolio<span>.</span></h1>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <div class="texts">
+                    <h1>Welcome in my Portfolio<span>.</span></h1>
+                    <p>A passionate programmer who loves JavaScript and enjoys creating amazing projects. With a strong foundation in web development, I strive to continuously learn and improve my skills. I am dedicated to delivering high-quality code and creating user-friendly experiences. Let's collaborate and bring your ideas to life!</p>
+                </div>
+                <button>Look at my skills <i class="fas fa-arrow-right"></i></button>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-patreon"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+                <p class="up">My super socials <i class="fas fa-arrow-up"></i></p>
+            </div>
+                
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <div class="about-info">
+                    <p>I am a passionate programmer who loves programming in JavaScript, HTML, and CSS. I also have experience with other programming languages such as SCSS/SASS and TypeScript, which I use to write better JavaScript code. With a strong foundation in web development, I strive to continuously learn and improve my skills. I am dedicated to delivering high-quality code and creating user-friendly experiences. Let's collaborate and bring your ideas to life!</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="./src/assets/images/computer.png" alt="Profile Picture">
+            </div>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ul>
+                <li>HTML <span>80%</span></li>
+                <li>CSS <span>75%</span></li>
+                <li>JavaScript <span>85%</span></li>
+                <li>Typescript <span>70%</span></li>
+                <li>SASS/SCSS <span>65%</span></li>
+                <li>NodeJs <span>60%</span></li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>My Latest 3 Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Fluent Chat</h3>
+                    <img src="https://user-images.githubusercontent.com/75419729/254807185-c2ad3694-dce8-488d-806c-130044a14cac.png" alt="Project 1">
+                    <p>Fluent chat is a simple website for communication between users like as messenger but in my style</p>
+                    <div class="tags">
+                        <span>#html</span>
+                        <span>#scss</span>
+                        <span>#typescript</span>
+                        <span>#firebase</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Wizard Code</h3>
+                    <img src="https://user-images.githubusercontent.com/75419729/250040542-591e97e9-712f-4192-bbd5-7c9a97987ade.png" alt="Project 2">
+                    <p>Make order for your website faster and easier</p>
+                    <div class="tags">
+                        <span>#html</span>
+                        <span>#scss</span>
+                        <span>#typescript</span>
+                        <span>#firebase</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>MC News</h3>
+                    <img src="https://user-images.githubusercontent.com/75419729/245836287-9d615ccd-dded-45b5-9b08-4f462da636cf.png" alt="Project 3">
+                    <p>Read about all minecraft versions, read when it released and more!</p>
+                    <div class="tags">
+                        <span>#html</span>
+                        <span>#scss</span>
+                        <span>#typescript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <h1>Frequently Asked <span>Questions</span></h1>
+            <div class="faqs">
+                <div class="faq-item">
+                    <h2>Where to find my projects? <button><i class="fas fa-plus"></i></button></h2>
+                    <p class="answer">Look at my github profile, and go to my repositories</p>
+                </div>
+                <div class="faq-item">
+                    <h2>I making a websites for order? <button><i class="fas fa-plus"></i></button></h2>
+                    <p class="answer">Yep! If are you interested, contact us codeadiksuu@gmail.com</p>
+                </div>
+                <div class="faq-item">
+                    <h2>How much costs my websites? <button><i class="fas fa-plus"></i></button></h2>
+                    <p class="answer">It depends on the customer's requirements</p>
+                </div>
+                <div class="faq-item">
+                    <h2>Where are you from? <button><i class="fas fa-plus"></i></button></h2>
+                    <p class="answer">From Earth planet... Poland 🇵🇱</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2023 Adiksuu</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+                <a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a>
+                <a href="https://www.behance.net"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/scripts/script.js"></script>
 </body>
 </html>

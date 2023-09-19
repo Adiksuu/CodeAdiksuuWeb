@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.67.0"
+  },
+  "name": "good-personal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile": "sass --watch ./src/assets/scss/styles.scss ./dist/style.css"
+  },
+  "author": "Adiksuu",
+  "license": "MIT",
+  "description": ""
+}
