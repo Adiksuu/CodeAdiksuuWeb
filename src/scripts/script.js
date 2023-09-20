@@ -20,3 +20,23 @@ const navToggle = document.querySelector('.nav-toggle')
 navToggle.addEventListener('click', () => {
     navToggle.parentElement.classList.toggle('show')
 })
+
+
+// OPEN LINKS FUNCTION
+function openSiteInNewTab(url) {
+    window.open(`https://${url}`, '_blank');
+}
+
+// REVEAL EFFECTS
+window.addEventListener("scroll", reveal);
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 50;
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("show");
+        }
+    }
+}

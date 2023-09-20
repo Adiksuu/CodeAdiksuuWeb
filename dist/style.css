@@ -36,6 +36,10 @@ nav .navbar-right ul {
 nav .navbar-right ul li {
   margin-left: 16px;
 }
+nav .navbar-right ul li.extra a {
+  background-color: #3dabff;
+  color: #fff;
+}
 nav .navbar-right ul li a {
   text-decoration: none;
   color: #333;
@@ -92,6 +96,11 @@ nav.show .navbar-right ul li {
   display: block;
   margin-left: 0;
 }
+nav.show .navbar-right ul li a {
+  width: 196px;
+  display: flex;
+  justify-content: center;
+}
 
 main {
   padding: 20px;
@@ -135,7 +144,7 @@ main #home .home-content .texts p {
   max-width: 656px;
   margin-bottom: 24px;
 }
-main #home .home-content button {
+main #home .home-content a#btn {
   padding: 8px 24px;
   background-color: #333;
   color: #fff;
@@ -143,10 +152,11 @@ main #home .home-content button {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.2s linear;
 }
-main #home .home-content button:hover {
-  transform: scale(1.025);
+main #home .home-content a#btn:hover {
+  padding: 8px 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 main #home .home-content p.up {
@@ -381,6 +391,17 @@ footer .footer-content .footer-right a {
 }
 footer .footer-content .footer-right a:hover {
   color: rgba(51, 51, 51, 0.5647058824);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* For Webkit browsers */

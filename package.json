@@ -2,14 +2,14 @@
   "dependencies": {
     "sass": "^1.67.0"
   },
-  "name": "good-personal-portfolio",
+  "name": "adiksuu-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/scripts/script.js",
   "devDependencies": {},
   "scripts": {
     "compile": "sass --watch ./src/assets/scss/styles.scss ./dist/style.css"
   },
   "author": "Adiksuu",
   "license": "MIT",
-  "description": ""
+  "description": "A personal portfolio created with AI"
 }

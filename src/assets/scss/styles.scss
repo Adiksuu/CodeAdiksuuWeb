@@ -40,6 +40,12 @@ nav {
 
         li {
             margin-left: 16px;
+            &.extra {
+                a {
+                    background-color: #3dabff;
+                    color: #fff;
+                }
+            }
 
             a {
                 text-decoration: none;
@@ -99,6 +105,11 @@ nav {
                 li {
                     display: block;
                     margin-left: 0;
+                    a {
+                        width: 196px;
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -154,7 +165,7 @@ main {
                     margin-bottom: 24px;
                 }
             }
-            button {
+            a#btn {
                 padding: 8px 24px;
                 background-color: #333;
                 color: #fff;
@@ -162,10 +173,11 @@ main {
                 border-radius: 5px;
                 font-size: 16px;
                 cursor: pointer;
+                text-decoration: none;
                 transition: 0.2s linear;
 
                 &:hover {
-                    transform: scale(1.025);
+                    padding: 8px 30px;
                     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
                 }
             }
@@ -440,10 +452,22 @@ footer {
     }
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* For Webkit browsers */
 ::-webkit-scrollbar {
     width: 9px;
-
 }
 ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
