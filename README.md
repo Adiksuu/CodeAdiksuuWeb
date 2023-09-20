@@ -3,10 +3,6 @@
 
 ---
 
-![image](https://user-images.githubusercontent.com/75419729/235363330-6d69d055-5d7a-49cc-bddc-c3ff29623b26.png)
-
----
-
 # About Website
 Website was created to inform visitors who I am and what I am interested in.
 
