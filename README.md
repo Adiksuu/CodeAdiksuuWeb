@@ -1,3 +1,7 @@
+# SOON...
+![image](https://github.com/Adiksuu/CodeAdiksuuWeb/assets/75419729/07e0adad-b7e7-408d-b018-aff4a112dedc)
+
+
 # CodeAdiksuuWeb
 - My Personal Website
 
